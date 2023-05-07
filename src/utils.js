@@ -23,7 +23,7 @@ module.exports = {
 					self.log('warn', 'Error: ' + err);
 				}
 	
-				this.stopIntervals();
+				self.stopIntervals();
 				self.updateStatus(InstanceStatus.ConnectionFailure);
 				self.handleError(err);
 			});
