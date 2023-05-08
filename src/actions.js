@@ -961,7 +961,51 @@ module.exports = {
 					params: [
 						{
 							param: busType + busSetting + "_" + zone_number,
-							val: source_number
+							val: parseInt(source_number)
+						},
+					]
+				}
+
+				self.sendCommand(cmdObj);
+			}
+		};
+
+		actions.group_set_source = {
+			name: 'Set Group Source',
+			options:
+			[
+				{
+					type: 'textinput',
+					label: 'Group Number',
+					tooltip: 'i.e. If third party parameter is GroupSource_0, enter 0 here.',
+					id: 'group_number',
+					default: '0',
+					useVariables: true
+				},
+				{
+					type: 'textinput',
+					label: 'Source Number',
+					id: 'source_number',
+					default: '0',
+					useVariables: true
+				},
+			],
+			callback: async function(event) {
+				let options = event.options;
+
+				let busType = 'Group';
+				let busSetting = 'Source';
+
+				let group_number = await self.parseVariablesInString(options.group_number);
+				let source_number = await self.parseVariablesInString(options.source_number);
+
+				let cmdObj = {
+					jsonrpc: '2.0',
+					method: 'set',
+					params: [
+						{
+							param: busType + busSetting + "_" + group_number,
+							val: parseInt(source_number)
 						},
 					]
 				}
