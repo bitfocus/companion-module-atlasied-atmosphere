@@ -1040,7 +1040,7 @@ module.exports = {
 					params: [
 						{
 							param: busType + busSetting + "_" + number,
-							val: number
+							val: 1
 						},
 					]
 				}
@@ -1075,7 +1075,7 @@ module.exports = {
 					params: [
 						{
 							param: busType + busSetting + "_" + number,
-							val: number
+							val: 1
 						},
 					]
 				}
