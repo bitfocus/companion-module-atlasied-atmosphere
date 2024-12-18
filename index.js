@@ -52,6 +52,10 @@ class atmosphereInstance extends InstanceBase {
 
 		this.stopIntervals()
 
+		if (this.config.controllerId === undefined) {
+			this.config.controllerId = 10
+		}
+
 		this.initActions()
 		this.initFeedbacks()
 		this.initVariables()
