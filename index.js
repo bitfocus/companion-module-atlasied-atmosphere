@@ -24,13 +24,13 @@ class atmosphereInstance extends InstanceBase {
 			...variables,
 			...presets,
 			...constants,
-			...utils
+			...utils,
 		})
 
-		this.socket = undefined;
+		this.socket = undefined
 
-		this.INTERVAL = null; //used for polling device for feedbacks
-		this.KEEPALIVE_INTERVAL = null; //used for keeping connection alive
+		this.INTERVAL = null //used for polling device for feedbacks
+		this.KEEPALIVE_INTERVAL = null //used for keeping connection alive
 	}
 
 	async destroy() {
@@ -38,7 +38,7 @@ class atmosphereInstance extends InstanceBase {
 			this.socket.destroy()
 		}
 
-		this.stopIntervals();
+		this.stopIntervals()
 	}
 
 	async init(config) {
@@ -46,12 +46,12 @@ class atmosphereInstance extends InstanceBase {
 	}
 
 	async configUpdated(config) {
-		this.updateStatus(InstanceStatus.Connecting)		
+		this.updateStatus(InstanceStatus.Connecting)
 
 		this.config = config
 
-		this.stopIntervals();
-		
+		this.stopIntervals()
+
 		this.initActions()
 		this.initFeedbacks()
 		this.initVariables()
@@ -59,7 +59,6 @@ class atmosphereInstance extends InstanceBase {
 
 		this.init_tcp()
 	}
-	
 }
 
 runEntrypoint(atmosphereInstance, UpgradeScripts)

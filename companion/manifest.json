@@ -21,10 +21,6 @@
 		"entrypoint": "../index.js"
 	},
 	"manufacturer": "AtlasIED",
-	"products": [
-		"Atmosphere"
-	],
-	"keywords": [
-		"Audio"
-	]
+	"products": ["Atmosphere"],
+	"keywords": ["Audio"]
 }

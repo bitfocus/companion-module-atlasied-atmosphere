@@ -26,7 +26,7 @@ module.exports = {
 							<img src="/int/help/module/atlasied-atmosphere/third_party_table.png" width="50%" />
 						</div>
 					</div>
-				`
+				`,
 			},
 			{
 				type: 'textinput',
@@ -34,7 +34,7 @@ module.exports = {
 				label: 'IP Address',
 				width: 6,
 				default: '192.168.0.1',
-				regex: Regex.IP
+				regex: Regex.IP,
 			},
 			/*{
 				type: 'number',
@@ -50,7 +50,7 @@ module.exports = {
 				id: 'verbose',
 				label: 'Enable Verbose Logging',
 				default: false,
-				width: 12
+				width: 12,
 			},
 			{
 				type: 'static-text',
@@ -67,5 +67,5 @@ module.exports = {
 				isVisible: (configValues) => configValues.verbose === true,
 			},
 		]
-	}
+	},
 }
