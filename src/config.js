@@ -30,7 +30,8 @@ module.exports = {
 				id: 'controllerIdInfo',
 				width: 9,
 				label: ' ',
-				value: 'Controller ID is a unique identifier for Third Party Control. This should be unique across all controllers (i.e. multiple Companion instances against this unit).',
+				value:
+					'Controller ID is a unique identifier for Third Party Control. This should be unique across all controllers (i.e. multiple Companion instances against this unit).',
 			},
 			{
 				type: 'static-text',

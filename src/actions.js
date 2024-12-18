@@ -44,7 +44,7 @@ module.exports = {
 							val: value,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -95,7 +95,7 @@ module.exports = {
 							pct: percent,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -140,7 +140,7 @@ module.exports = {
 							val: value,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -185,7 +185,7 @@ module.exports = {
 							val: value,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -228,7 +228,7 @@ module.exports = {
 							val: mute ? 1 : 0,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -273,7 +273,7 @@ module.exports = {
 							val: value,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -324,7 +324,7 @@ module.exports = {
 							pct: percent,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -369,7 +369,7 @@ module.exports = {
 							val: value,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -414,7 +414,7 @@ module.exports = {
 							val: value,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -457,7 +457,7 @@ module.exports = {
 							val: mute ? 1 : 0,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -502,7 +502,7 @@ module.exports = {
 							val: value,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -553,7 +553,7 @@ module.exports = {
 							pct: percent,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -598,7 +598,7 @@ module.exports = {
 							val: value,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -643,7 +643,7 @@ module.exports = {
 							val: value,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -686,7 +686,7 @@ module.exports = {
 							val: mute ? 1 : 0,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -731,7 +731,7 @@ module.exports = {
 							val: value,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -782,7 +782,7 @@ module.exports = {
 							pct: percent,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -827,7 +827,7 @@ module.exports = {
 							val: value,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -872,7 +872,7 @@ module.exports = {
 							val: value,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -915,7 +915,7 @@ module.exports = {
 							val: mute ? 1 : 0,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -959,7 +959,7 @@ module.exports = {
 							val: parseInt(source_number),
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -1003,7 +1003,7 @@ module.exports = {
 							val: parseInt(source_number),
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -1038,7 +1038,7 @@ module.exports = {
 							val: 1,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
@@ -1073,7 +1073,7 @@ module.exports = {
 							val: 1,
 						},
 					],
-					id: self.config.controllerId
+					id: self.config.controllerId,
 				}
 
 				self.sendCommand(cmdObj)
