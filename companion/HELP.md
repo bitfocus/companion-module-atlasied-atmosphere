@@ -39,7 +39,18 @@ Third party parameter names are dynamically assigned during configuration of the
 
 ## Variables
 
--
+- Bell Schedule Name (1-10)
+- GPO Preset Name (1-20)
+- GPO State (1-2)
+- Group (1-12) Gain, Mute, Name, Source, Active
+- Loud Noise (1-20) Status
+- Message (1-100) Name
+- Mix (1-8) Source (1-14) Gain, Mute
+- Mix (1-8) Gain, Mute, Name
+- Routine (1-20) Name
+- Scene (1-20) Name
+- Source (1-14) Gain, Mute, Name
+- Zone (1-8) Gain, Mute, Name, Source
 
 ## Presets
 
