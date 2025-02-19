@@ -31,6 +31,8 @@ class atmosphereInstance extends InstanceBase {
 
 		this.INTERVAL = null //used for polling device for feedbacks
 		this.KEEPALIVE_INTERVAL = null //used for keeping connection alive
+
+		this.variableValues = {}
 	}
 
 	async destroy() {
