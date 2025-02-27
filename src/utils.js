@@ -187,6 +187,12 @@ module.exports = {
 			}
 			groupsSubObj.params.push(groupGainParamObj)
 
+			let groupGainParamObjPct = {
+				param: `GroupGain_${i}`,
+				fmt: 'pct',
+			}
+			groupsSubObj.params.push(groupGainParamObjPct)
+
 			//GroupMeter
 			let groupMeterParamObj = {
 				param: `GroupMeter_${i}`,
@@ -294,6 +300,12 @@ module.exports = {
 			}
 			mixSourcesSubObj.params.push(mixGainParamObj)
 
+			let mixGainParamObjPct = {
+				param: `MixGain_${mixNumber}`,
+				fmt: 'pct',
+			}
+			mixSourcesSubObj.params.push(mixGainParamObjPct)
+
 			//MixMeter
 			let mixMeterParamObj = {
 				param: `MixMeter_${mixNumber}`,
@@ -367,6 +379,12 @@ module.exports = {
 			}
 			sourcesSubObj.params.push(sourceGainParamObj)
 
+			let sourceGainParamObjPct = {
+				param: `SourceGain_${i}`,
+				fmt: 'pct',
+			}
+			sourcesSubObj.params.push(sourceGainParamObjPct)
+
 			//SourceMeter
 			let sourceMeterParamObj = {
 				param: `SourceMeter_${i}`,
@@ -405,6 +423,12 @@ module.exports = {
 				fmt: 'val',
 			}
 			zonesSubObj.params.push(zoneGainParamObj)
+
+			let zoneGainParamObjPct = {
+				param: `ZoneGain_${i}`,
+				fmt: 'pct',
+			}
+			zonesSubObj.params.push(zoneGainParamObjPct)
 
 			//ZoneMeter
 			let zoneMeterParamObj = {
@@ -524,6 +548,13 @@ module.exports = {
 					for (let i = 0; i < params.length; i++) {
 						let param = params[i].param
 						let val = params[i].val
+						let pct = params[i].pct
+
+						//if the param is a percentage, we will use that instead of the val and append _pct to the variable name
+						if (pct !== undefined) {
+							val = parseInt(pct)
+							param += '_pct'
+						}
 
 						//if val is undefined, try .str and use that instead
 						if (val === undefined) {

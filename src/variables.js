@@ -35,6 +35,10 @@ module.exports = {
 				name: `Group ${i + 1} Gain`,
 				variableId: `GroupGain_${i}`,
 			})
+			variables.push({
+				name: `Group ${i + 1} Gain Pct`,
+				variableId: `GroupGain_${i}_pct`,
+			})
 			/*variables.push({
 				name: `Group ${(i + 1)} Meter`,
 				variableId: `GroupMeter_${i}`,
@@ -84,6 +88,10 @@ module.exports = {
 					variableId: `Mix_${mixNumber}_SourceGain_${j}`,
 				})
 				variables.push({
+					name: `Mix ${i} Source ${j + 1} Gain Pct`,
+					variableId: `Mix_${mixNumber}_SourceGain_${j}_pct`,
+				})
+				variables.push({
 					name: `Mix ${i} Source ${j + 1} Mute`,
 					variableId: `Mix_${mixNumber}_SourceMute_${j}`,
 				})
@@ -130,6 +138,10 @@ module.exports = {
 				name: `Source ${i + 1} Gain`,
 				variableId: `SourceGain_${i}`,
 			})
+			variables.push({
+				name: `Source ${i + 1} Gain Pct`,
+				variableId: `SourceGain_${i}_pct`,
+			})
 			/*variables.push({
 				name: `Source ${i + 1} Meter`,
 				variableId: `SourceMeter_${i}`,
@@ -149,6 +161,10 @@ module.exports = {
 			variables.push({
 				name: `Zone ${i + 1} Gain`,
 				variableId: `ZoneGain_${i}`,
+			})
+			variables.push({
+				name: `Zone ${i + 1} Gain Pct`,
+				variableId: `ZoneGain_${i}_pct`,
 			})
 			/*variables.push({
 				name: 'Zone Meter' + (i + 1),
